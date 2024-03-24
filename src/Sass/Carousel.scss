@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.mainContainer {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.title {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.subTitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.carouselContainer {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.carouselItem1,
+.carouselItem2,
+.carouselItem3,
+.carouselItem4 {
+  position: absolute;
+  top: 10%;
+  width: 24%;
+  border-radius: 10%;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselItem1 {
+  left: 53%;
+}
+
+.carouselItem2 {
+  right: 53%;
+}
+
+.carouselItem3 {
+  left: 68%;
+  top: 19%;
+  width: 18%;
+}
+
+.carouselItem4 {
+  right: 68%;
+  top: 19%;
+  width: 18%;
+}
+
+.currentSlideContainer {
+  position: relative;
+  width: 30%;
+  height: 350%;
+  border-radius: 5%;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: width 0.5s ease;
+}
+
+.currentSlideContainer:hover {
+  // width: 31%;
+  scale: 1.25;
+  transition:0.5s ease-in-out;
+}
+
+.currentSlideTitle {
+  position: absolute;
+  bottom: 0;
+  background-color: #231f20;
+  opacity: 0.5;
+  color: white;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.currentSlideImage {
+  width: 100%;
+}
+
+.controls {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlButton {
+  font-size: 2rem;
+  color: #d3d2d2;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.circleIconContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+  width: 13%;
+}
+
+.circle {
+  font-size: 1.5rem;
+  color: #d3d2d2;
+  cursor: pointer;
+}
+
+.activeCircle {
+  color: #83cef9;
+  transform: scale(1);
+}

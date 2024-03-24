@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$background-color: #2F302C;
+$font-color: white;
+$font-family: "Lato", sans-serif;
+$font-weight: 400;
+$font-style: normal;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navContainer {
+  @include flex-center;
+  background-color: $background-color;
+  padding: 0.25rem 2rem;
+  width: 95vw;
+}
+
+.imageContainer {
+  width: 15%;
+  img {
+    width: 10.25rem;
+    height: 2.625rem;
+  }
+}
+
+.listConatiner {
+  width: 70%;
+}
+
+.listMain {
+  @include flex-center;
+  padding: 2rem;
+  list-style: none;
+  width: 60vw;
+  color: $font-color;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+.moreList {
+  @include flex-center;
+  color: #83CEF9;
+  .down {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
+
+.searchConatiner {
+  @include flex-center;
+  list-style: none;
+  color: $font-color;
+  border-bottom: 1px solid $font-color;
+  width: 15%;
+  margin-right: 5%;
+  input {
+    color: $font-color;
+    background-color: $background-color;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 80%;
+  }
+}
+
+.navDropdown {
+  position: absolute;
+  top: 6rem;
+  background-color: $background-color;
+  width: 10rem;
+  color: $font-color;
+  border-radius: 0.5rem;
+  line-height: 2rem;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  ul {
+    list-style: none;
+    font-size: larger;
+    margin: 0.25rem 0rem;
+    li {
+      padding: 0.25rem 1rem 0.25rem 0.5rem;
+      &:hover {
+        background-color: #EEEEEE;
+        color: #231F20;
+      }
+    }
+  }
+}
