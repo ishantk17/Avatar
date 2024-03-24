@@ -126,3 +126,56 @@
   color: #83cef9;
   transform: scale(1);
 }
+
+@media (max-width: 768px) {
+  .mainContainer{
+    margin-top: 15%;
+  }
+  .title {
+    font-size: 3rem;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+  }
+
+  .carouselItem1,
+  .carouselItem2,
+  .carouselItem3,
+  .carouselItem4 {
+    width: 30%;
+  }
+
+  .currentSlideContainer {
+    width: 40%;
+  }
+
+  .circleIconContainer {
+    width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subTitle {
+    font-size: 1rem;
+  }
+
+  .carouselItem1,
+  .carouselItem2,
+  .carouselItem3,
+  .carouselItem4 {
+    width: 50%;
+  }
+
+  .currentSlideContainer {
+    width: 60%;
+  }
+
+  .circleIconContainer {
+    width: 30%;
+  }
+}

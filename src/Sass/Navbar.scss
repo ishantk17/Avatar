@@ -97,3 +97,39 @@ $font-style: normal;
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .imageContainer {
+    @include flex-center;
+    width: 100%;
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  .listConatiner {
+    @include flex-center;
+    width: 100%;
+  }
+
+  .listMain {
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      padding:0 0.5rem;
+    }
+  }
+
+  .searchConatiner {
+    @include flex-center;
+    width: 50%;
+    margin:0 0 1rem 0;
+  }
+}
+
